@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client'
 
 
 
+
 // import { CounterApp } from './01-useState/CounterApp'
 // import { CounterWithCustomHook } from './01-useState/CounterWithCustomHook'
 
@@ -16,9 +17,10 @@ import ReactDOM from 'react-dom/client'
 
 // import { Layout } from './05-useLayoutEffect/Layout'
 
-// import { Memorize } from './06-memos/Memorize'
 
-import { MemoHook } from './06-memos/MemoHook'
+// import { Memorize } from './06-memos/Memorize'
+// import { MemoHook } from './06-memos/MemoHook'
+import { CallbackHook } from './06-memos/CallbackHook'
 
 
 // import { HooksApp } from './HooksApp'
@@ -27,6 +29,6 @@ import './index.css'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   // <React.StrictMode>
-    <MemoHook />
+    <CallbackHook />
   /* </React.StrictMode> */
 )
