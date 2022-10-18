@@ -1,4 +1,5 @@
 import { useReducer } from "react";
+import { TodoList } from "./TodoList";
 import { todoReducer } from "./todoReducer";
 
 const initialState = [
@@ -31,15 +32,9 @@ export const TodoApp = () => {
 
             <div className="row">
                 <div className="col-7">
-                    {/* TodoList */}
-                    <ul className="list-group">
-                        <li className="list-group-item d-flex justify-content-between">
-                            <span className="align-self-center">Item 1</span>
-                            <button className="btn btn-danger">Borrar</button>
-                        </li>
-                        
-                    </ul>
-                    {/* Fin todolist */}
+
+                    <TodoList todos={ todos }/>
+
                 </div>
 
                 <div className="col-5">
