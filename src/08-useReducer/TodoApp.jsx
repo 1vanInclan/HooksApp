@@ -3,13 +3,7 @@ import { TodoAdd } from "./TodoAdd";
 import { TodoList } from "./TodoList";
 import { todoReducer } from "./todoReducer";
 
-const initialState = [
-    // {
-    //     id: new Date().getTime(),
-    //     description: 'Recolectar la piedra del alma',
-    //     done: false,
-    // }
-]
+const initialState = []
 
 const init = () => {
     return JSON.parse( localStorage.getItem('todos')) || [];
