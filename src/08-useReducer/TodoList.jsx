@@ -1,7 +1,9 @@
 import { Todoitem } from "./Todoitem"
 
 
-export const TodoList = ({ todos = [] }) => {
+export const TodoList = ({ todos = [], onDeleteTodo }) => {
+
+
 
     // console.log(todos.map(todo => (
     //     todo.id
@@ -15,7 +17,7 @@ export const TodoList = ({ todos = [] }) => {
     <ul className="list-group">
         {
             todos.map( todo => (
-                <Todoitem key={ todo.id } todo={todo}/>
+                <Todoitem key={ todo.id } todo={todo} onDeleteTodo={ onDeleteTodo }/>
             ))
         }             
     </ul>
